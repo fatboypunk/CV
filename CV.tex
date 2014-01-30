@@ -1,0 +1,118 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+% NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Marcel} 
+\familyname{Horlings} 
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Vinkenlaan 50}{9663CN Nieuwe Pekela}
+\mobile{06-48 53 20 73}
+\email{marcel.horlings@gmail.com}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Opleidingen}
+
+\cventry{2010--Heden}{Informatica}{Hanze Hogeschool}{Groningen}{}{}  % Arguments not required can be left empty
+\cventry{2006--2010}{MBO ICT beheer}{Noorderpoort college}{Groningen}{}{}
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Werkervaring}
+
+% \subsection{Vocational}
+\cventry{2013--2014}{Afstudeerder ontwikkelaar}{\textsc{Nidaros IT}}{Hoogeveen}{}{
+De app ScanjeBon.nl ontwikkeld voor iOS. Met deze app kan een foto gemaakt worden van een bonnetje waar de gebruiker vervolgens zelf gegevens aan toe kan voegen. De foto en bijbehorende informatie wordt vervolgens lokaal opgeslagen en op een server via een API.
+}
+
+%------------------------------------------------
+
+\cventry{2012--2013}{Stagiair ontwikkelaar}{\textsc{App B.V.}}{Ruinen}{}{
+Functionaliteiten ontwikkeld voor een opnieuw geprogrammeerde applicatie die een afgeschermde omgeving bied voor gebruikers van bibliotheek computers. Deze applicatie is ontwikkeld in \textsc{Java}.
+\newline Ontwikkelde functies:
+\begin{itemize}
+  \item Lokale opslag voor gebruikers
+  \item I18N - Internationalization
+  \item Communicatie naar labelprinters om zelfgemaakte labels te kunnen printen
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2009}{Stage netwerk administrator}{\textsc{Refaja}}{Stadskanaal}{}
+{In mijn stage als netwerk beheerder, heb ik alle ICT gerelateerde apparaten geïnventariseerd in het Refaja. Daarnaast heb ik een logging systeem geconfigureerd voor een aantal apparaten.}
+
+%----------------------------------------------------------------------------------------
+% COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Vaardigheden}
+
+\cvitem{Basis}{\textsc{Ruby}, \textsc{PostgreSQL}, \textsc{Python}, \textsc{MongoDB},  \LaTeX}
+\cvitem{Gevorderd}{\textsc{Java}, \textsc{Javascript}, \textsc{MySQL}, \textsc{html}, Linux, OS X }
+
+%----------------------------------------------------------------------------------------
+% LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Talen}
+
+\cvitemwithcomment{Nederlands}{Moedertaal}{}
+\cvitemwithcomment{Engels}{Gevorderd}{Vloeiend}
+
+%----------------------------------------------------------------------------------------
+% INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interesses}
+
+\renewcommand{\listitemsymbol}{-~} 
+
+\cvlistdoubleitem{Voetbal}{Eten met vrienden}
+\cvlistdoubleitem{Lezen}{Muziek luisteren}
+\end{document}
