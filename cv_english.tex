@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+% \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+% NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Marcel}
+\familyname{Horlings}
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum vitae}
+\address{Helper Molenstraat 14a}{9721BV Groningen}{The Netherlands}
+\mobile{+316-48 53 20 73}
+\email{m.horlings@hey.com}
+\photo[70pt][0.4pt]{pictures/profile_picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+% \subsection{Vocational}
+\cventry{2017--Recent}{Lead Software Developer}{\textsc{Defacto}}{Groningen}{}{
+  In these years we've build the new version of the main application for Defacto called CAPP LMS.
+  This was build with Elixir, Phoenix and Turbolink.
+  \begin{itemize}%
+    \item Created muliple csv reports with SQL;
+    \item Open sourced multiple libraries;
+    \item Mentored multiple junior \& medior developers;
+    \item Gave talks inside and outside the company;
+    \item Setup a PubSub system for side effects in the app;
+  \end{itemize}
+}
+\cventry{2016--2017}{Medior Software Developer}{\textsc{Defacto}}{Groningen}{}{
+  Worked as a developer for LearningSpaces that was build on Ruby on Rails and EmberJS
+  \begin{itemize}%
+    \item
+    \item Had an advicing role for management;
+    \item Helped developers grow in the technical parts of the job;
+  \end{itemize}
+}
+\cventry{2014--2016}{Junior Software Developer}{\textsc{Defacto}}{Groningen}{}{
+  Worked as a developer for LearningSpaces that was build on Ruby on Rails and EmberJS
+  \begin{itemize}%
+    \item Implemented core features using both Ruby on Rails and EmberJS;
+    \item Gave chat based customer support;
+    \item Did workshops with existing customers;
+  \end{itemize}
+}
+
+% \subsection{Vocational}
+\cventry{2019--2019}{Thesis \& Software Developer}{\textsc{Miniem}}{Groningen}{}{
+  For my thesis I created a backend for the MacOS app Funkido. With Funkido
+  users can drum along with MIDI files. For this application I have made a
+  webscraper plus search engine to let users find and rate MIDI files in Ruby on
+  Rails. The app would also extract information out of MIDI-files to provide to
+  users and communnicate with the Funkido app through GraphQL.
+}
+
+\cventry{2016--2018}{Software Developer \& co-owner}{\textsc{Mondoline.nl}}{Groningen}{}{
+  In this period I build and ran a webshop for dental products. The webshop was
+  build with Ruby on Rails and processed over 3000 orders.
+}
+
+\section{Education}
+
+\cventry{2010--2019}{Software Engineering}{Hanze University of Applied Sciences}{Groningen}{}{
+  \begin{itemize}%
+    \item Received an award for the best thesis of my class;
+  \end{itemize}
+}  % Arguments not required can be left empty
+
+%----------------------------------------------------------------------------------------
+% COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{-}{HTML, CSS, JavaScript}
+\cvitem{-}{Ruby on Rails, Git, SQL}
+\cvitem{-}{Elixir, Phoenix}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Dutch}{Native}{}
+\cvitemwithcomment{Engels}{Fluent}{}
+
+%----------------------------------------------------------------------------------------
+% INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\end{document}
