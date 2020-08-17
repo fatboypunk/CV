@@ -25,7 +25,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12. paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape. font families: sans or roman
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 % \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
@@ -45,7 +45,10 @@
 \address{Helper Molenstraat 14a}{9721BV Groningen}{The Netherlands}
 \mobile{+316-48 53 20 73}
 \email{m.horlings@hey.com}
-\photo[70pt][0.4pt]{pictures/profile_picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\photo[70pt][0.4pt]{pictures/profile_graduation_shorter} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\social[linkedin]{marcel-horlings}
+\social[twitter]{FatboyPunk}
+\social[github]{FatboyPunk}
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -72,64 +75,81 @@
 
 \section{Experience}
 
-% \subsection{Vocational}
+\subsection{Defacto}
 \cventry{2017--Current}{Lead Software Developer}{Defacto}{Groningen}{The
 Netherlands}{
-  In these years we have built the new version of the main application for Defacto called CAPP LMS.
-  This was made with Elixir, Phoenix and Turbolinks. CAPP LMS is an application
-  to track the competence and compliancy of mostly healthcare and government institutions.
-  It supports 250.000 active users to receive ongoing eductation they need for
-  their jobs. To do this CAPP interacts with multiple API's to receive results
-  of users and to export the compliancy of the institutions.
+  In these years, we have built the new version of the main application for
+  Defacto, called CAPP LMS\@.
+  The LMS, created with Elixir, Phoenix, and Turbolinks, is an application
+  that tracks the competence and compliance of employees for mostly healthcare and government institutions.
+  It supports 250.000 active users in receive ongoing education they need for
+  their jobs. To do this, CAPP interacts with multiple API's to obtain users' results
+  and to export the institutions' compliance.
+  \\ \\ Tasks and achievements:
   \begin{itemize}%
-    \item Created multiple detailed CSV reports with SQL.
-    \item Open sourced multiple libraries.
+    \item Created multiple detailed CSV reports with SQL\@.
+    \item Open-sourced multiple libraries.
     \item Mentored multiple junior \& medior developers.
     \item Gave talks within the company and at meetups.
     \item Set up a PubSub system for side effects in the app.
   \end{itemize}
 }
 
-% \subsection{Vocational}
-\cventry{2019--2019}{Bachelor's thesis \& Software Developer}{Miniem}{Groningen}{The
-Netherlands}{
-  For my Bachelor's thesis I created a Ruby on Rails backend for the MacOS app
-  Funkido. With Funkido, users can drum along with MIDI files.
+\cventry{2016--2017}{Medior Software Developer}{}{}{}{
+  As a medior software developer, I worked on LearningSpaces, which uses Ruby on Rails,
+  EmberJS, and PostgreSQL\@. LearningSpaces created a new way of learning
+  between co-workers and is used for performance support and onboarding of
+  colleagues.
+  I have been a part of every feature from concept to shipping and had a
+  leading role in further developing the product.
+  \\ \\ Tasks and achievements:
   \begin{itemize}%
-    \item Built a webscraper to find MIDI-files.
-    \item Created a GraphQL API to communicate with the MacOS app.
-    \item Extracted information out of MIDI-files (E.g. which instruments,
-      beats per minute, length of the song).
-  \end{itemize}
-}
-
-\cventry{2016--2017}{Medior Software Developer}{Defacto}{Groningen}{The
-Netherlands}{
-  Worked as a medior software developer with Ruby on Rails and EmberJS. During
-  this period I mostly worked on LearningSpaces, which created a new way of
-  learning between co-workers.
-  \begin{itemize}%
-    \item Had an advising role for management (E.g. what to build, who to hire).
+    \item Had an advising role for management (E.g., what features to build, who to hire).
     \item Helped developers grow in the technical parts of the job.
+    \item Made architectural design decisions.
   \end{itemize}
 }
 
-\cventry{2016--2018}{Software Developer \& co-owner}{Mondonline}{Groningen}{The
-Netherlands}{
-  In this period I built and ran a webshop for dental products. The webshop was
-  built with Ruby on Rails and processed over 3000 orders.
-}
-
-\cventry{2014--2016}{Junior Software Developer}{Defacto}{Groningen}{The
-Netherlands}{
-  Worked as a junior software developer for LearningSpaces that was built on Ruby on Rails and
-  EmberJS.
+\cventry{2014--2016}{Junior Software Developer}{}{}{}{
+  I have learned the ins and outs of Ruby on Rails and how optimizing code for readability
+  is often better than optimizing for computers to run.
+  \\ \\ Tasks and achievements:
   \begin{itemize}%
-    \item Implemented core features using both Ruby on Rails and EmberJS.
+    \item Implemented core features using both Ruby on Rails and EmberJS\@.
     \item Gave chat-based customer support.
     \item Did workshops with existing customers.
   \end{itemize}
 }
+
+\subsection{Funkido}
+\cventry{2019--2019}{Bachelor's thesis \& Software Developer}{Miniem}{Groningen}{The
+Netherlands}{
+  For my Bachelor's thesis, I created a Ruby on Rails backend for the macOS app
+  Funkido. With Funkido, users can train their musical skills by drumming along
+  to MIDI files that users found online or have on their computers
+  online. Because searching for MIDI files that are good enough to play along to is
+  hard, I made a search engine based on known sites that contain these files.
+  Data is extracted out of each MIDI and combined with reviews of
+  users. I have completed the thesis plus the backend application in my spare time.
+  \\ \\ Tasks and achievements:
+  \begin{itemize}%
+    \item Set up the backend.
+    \item Built a web scraper to find MIDI files.
+    \item Created a GraphQL API to communicate with the macOS app.
+    \item Extracted information out of MIDI files (E.g.\ which instruments,
+      beats per minute, length of the song).
+  \end{itemize}
+}
+
+
+\subsection{Mondonline}
+\cventry{2016--2018}{Software Developer \& co-owner}{Mondonline}{Groningen}{The
+Netherlands}{
+  I built and ran a webshop for dental products. The webshop used Ruby on Rails
+  and processed over 3000 orders. It connected with multiple API's to
+  receive payments and to create shipping labels.
+}
+
 
 
 \section{Education}
@@ -137,7 +157,7 @@ Netherlands}{
 \cventry{2010--2019}{Bachelor's degree in Software Engineering}{Hanze University of Applied Sciences}{Groningen}{The
 Netherlands}{
   \begin{itemize}%
-    \item Received the award for best Bachelor's thesis of the year.
+    \item Received the award for the best Bachelor's thesis of the year.
   \end{itemize}
 }  % Arguments not required can be left empty
 
@@ -149,8 +169,8 @@ Netherlands}{
 
 \section{Blog }
 
-\cventry{}{\href{https://devrain.io}{DevRain.io}}{}{}{}{Here I post blogs about development work
-I have done.}
+\cventry{}{\href{https://devrain.io}{DevRain.io}}{}{}{}{I wrote about some
+structuring I've added to the apps that I worked at.}
 
 %----------------------------------------------------------------------------------------
 % LANGUAGES SECTION
@@ -166,3 +186,4 @@ I have done.}
 %----------------------------------------------------------------------------------------
 
 \end{document}
+  \\ \\ Tasks and achievements:
